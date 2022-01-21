@@ -18,10 +18,10 @@ The current school district requires an analysis of Math and Reading assessment 
 ## Resources
 Data Source: schools\_complete.csv, students_complete.csv  
 Software: PythonData Dev Environment (Python 3.7.11), Jupyter Notebook 6.4.6
-
+Dependencies: Pandas, Numpy
 
 ## Code Analysis
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus, orci in pharetra dapibus, ligula turpis faucibus urna, vel pharetra diam urna at urna. Curabitur rhoncus, turpis sed ultricies dignissim, nulla nibh eleifend sem, ut dignissim turpis lacus eget diam. Integer id consequat nunc. Aliquam erat volutpat. Nam sit amet ipsum massa. Cras egestas orci magna, a hendrerit ipsum elementum a. Ut ac finibus erat, sagittis ullamcorper erat.  
+This analysis was done in a development environment using Jupyter Notebook (6.4.6), Python (3.7.11), and the Pandas and Numpy packages. The raw data was provided in two csv files, schools\_complete.csv, students_complete.csv. The students_complete.csv file required significant cleaning in the name column. Multiple affixes were included that were not applicable to students. Cleaning this column's data had no effect on the data. Additionally, the code in its final form includes multiple lines removing the Math and Reading Scores of Thomas High School ninth graders.
 
 ## Results of Statistical Analysis
 A complete statistical analysis was completed for every school in the area of the school district. Upon completion of the analysis, potential academic dishonesty was discovered in the math and reading grades at Thomas High School in ninth grade. As such, an important component of this analysis will include the comparison of the original dataset against the newly completed analysis that has removed the data from all ninth grade students at Thomas HS. The following questions guided this analysis: 
@@ -78,6 +78,9 @@ The following chart shows Scores by School Type. Schools were divided into two c
 ![Type](analysis/type_summary_df.png)
 
 ## Summary
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus, orci in pharetra dapibus, ligula turpis faucibus urna, vel pharetra diam urna at urna. Curabitur rhoncus, turpis sed ultricies dignissim, nulla nibh eleifend sem, ut dignissim turpis lacus eget diam. Integer id consequat nunc. Aliquam erat volutpat. Nam sit amet ipsum massa. Cras egestas orci magna, a hendrerit ipsum elementum a. Ut ac finibus erat, sagittis ullamcorper erat.  
+Overall, the changes between the original analysis and the revised analysis that removed Math and Reading Scores from Thomas High School ninth graders was minimal. A few changes were notable, as listed above. The Math Scores and Percent Passing were slightly lower. The Reading Scores were lower, while the Percent Passing was slightly higher. The Overall Passing was also slightly lower. If there is any cause for concern, a closer look should be given to the Ninth grade Reading scores. Statistically, though, the scores do not seem to be signigicantly out of line with other similar schools in the district.  
 
-Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+The final two charts show the Top Five and Bottom Five Schools based on Percentage Overall Passing.
+![Top_5](analysis/high_perf_schools.png)  
+
+![Bottom_5](analysis/low_perf_schools.png)
